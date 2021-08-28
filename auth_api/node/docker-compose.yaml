@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  api:
+    build: .  
+    image: auth_api
+    container_name: node-api
+    ports:
+      - ${PORT}:${PORT}
+    command: npm start
+    env_file: 
+      - .env
+
