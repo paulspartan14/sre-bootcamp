@@ -6,7 +6,7 @@ import db_connection from './database/connection'
 
 let config = Config;
 
-// conection db ELIMINAR AL FINAL despues de probar en docker
+// sirve para comprobar la conexion a la db, eliminar en producción.
 db_connection.connect((err) => {
   if (err) {
     console.log(`ha ocurrido un error: ${err}`)
