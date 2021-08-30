@@ -6,7 +6,7 @@ export const protectFunction = (authorization) => {
   try {
     const verifyUser = jwt.verify(authorization, SECRET)
     if (verifyUser) {
-      return "this is a protected route"
+      return "welcome! this is a protected route"
     }
     return null
   } catch (err) {
